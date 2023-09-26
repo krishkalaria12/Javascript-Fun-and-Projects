@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Weather App Project JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a City Name</h3>
+            <input
+            class="city-input"
+            id="city-input"
+            type="text"
+            placeholder="E.g., New York, London, Tokyo"
+            />
+        <button class="search-btn" id="search-btn">Search</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2 id="typeweather"></h2>
+                    <p id="day"></p>
+                    <img class="typeimg" id="typeimg" src="" alt="" />
+                    <h6 id="celsius"></h6>
+                    <h6 id="farhenhit"></h6>
+                    <h6 id="city">City -</h6>
+                    <h6 id="country">Country -</h6>
+                </div>
+            </div>
+            <div class="days-forecast">
+                <h2>All Other Factors of Temperature</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h2 id="Humidity">Humidity</h2>
+                        <img
+                            src="./assets/humidity.png"
+                            alt="Humidity"
+                            class="weather-image"
+                        />
+                    </li>
+                    <li class="card">
+                        <h2 id="WindSpeed">WindSpeed</h2>
+                        <img
+                            src="./assets/wind.png"
+                            alt="Wind Speed"
+                            class="weather-image"
+                        />
+                    </li>
+                    <li class="card">
+                        <h2 id="feelsLike">FeelsLike</h2>
+                        <img
+                            src="./assets/thermometer.svg"
+                            alt="FeelsLike"
+                            class="weather-image"
+                        />
+                    </li>
+                    <li class="card">
+                        <h2 id="Pressure">Pressure</h2>
+                        <img
+                            src="./assets/atmospheric.png"
+                            alt="Pressure"
+                            class="weather-image"
+                        />
+                        </li>
+                    <li class="card">
+                        <h2 id="cloud">Clouds</h2>
+                        <img src="./assets/cloud.png" alt="cloud" class="weather-image" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
