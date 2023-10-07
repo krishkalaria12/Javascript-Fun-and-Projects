@@ -1,0 +1,171 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 60vw;
+  margin: 5rem auto;
+}
+
+#listInput,
+button {
+  border-radius: 3px;
+}
+
+#listInput,
+#listForm button {
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: 1rem;
+}
+
+#listInput {
+  border: 1px solid #bbb;
+  transition: .3s box-shadow;
+  width: 60%;
+  font-size: 20px;
+}
+
+#listInput:focus {
+  outline: none;
+  border: 1px solid #4099ff;
+  box-shadow: 0 0 5px 1px #4099ff;
+}
+
+button {
+  cursor: pointer;
+}
+
+#list {
+  padding-top: 1.3rem;
+  margin: 0 auto;
+}
+
+#buttonContainer {
+  margin-top: .7rem;
+}
+
+#listForm button,
+.delete,
+.edit {
+  border: none;
+  color: #fff;
+}
+
+#listForm button,
+.edit {
+  background: #4099ff;
+}
+
+.delete {
+  background: tomato;
+}
+
+li {
+  width: 100%;
+  list-style: none;
+}
+
+li span {
+  display: inline-block;
+  /* width: 90%; */
+}
+
+.editInput {
+  width: 90%;
+  padding: .7rem;
+}
+
+li,
+.delete,
+.edit {
+  padding: .7rem;
+}
+
+li input,
+.delete {
+  margin-right: .3rem;
+}
+
+.completed {
+  color: #bbb;
+  position: relative;
+  text-decoration: line-through;
+}
+
+#msg {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: red;
+    display: none;
+}
+
+.essentials {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+input[type="date"] , input[type="time"]{
+    background-color: #0080ff;
+    padding: 10px;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 18%;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.heading {
+  margin-right: 10px;
+  color: rgb(11, 207, 135);
+}
+
+@media screen and (max-width:1000px) {
+  .essentials {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .essentials > input {
+    width: 100%;
+  }
+  #listInput {
+    width: 100% !important;
+    margin-bottom: 0;
+  }
+}
